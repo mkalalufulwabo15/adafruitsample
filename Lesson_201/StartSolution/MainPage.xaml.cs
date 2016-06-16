@@ -14,6 +14,12 @@ namespace Lesson_201
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        // which GPIO pin do we want to use to control the LED light
+        const int GPIOToUse = 18;
+
+        // The class which wraps our LED.
+        InternetLed internetLed;
+
         public MainPage()
         {
             this.InitializeComponent();
